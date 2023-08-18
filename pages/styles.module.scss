@@ -1,0 +1,53 @@
+.loginPage {
+  height: 100vh;
+  background-image: url(https://static.chasecdn.com/content/geo-images/images/background.desktop.day.1.jpeg);
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  background-position: center;
+  background-size: cover;
+
+  .headerBackground {
+    background-color: transparent;
+    background-image: linear-gradient(to bottom,rgba(0,0,0,.7) 0,rgba(0,0,0,.5) 50%,rgba(0,0,0,0) 100%);
+  }
+
+  textarea:focus,
+  input:focus {
+    outline: none;
+  }
+
+  .loginFormContainer {
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    width: 80vw;
+    padding: 24px;
+    border-radius: 5px;
+    gap: 12px;
+    margin: 0 auto;
+
+    a {
+      font-size: 0.8125rem;
+      font-weight: 400;
+      color: #126bc5;
+      letter-spacing: 0;
+      text-decoration: none;
+    }
+  }
+
+  div#form-login {
+    padding: 10px;
+  }
+
+  @media (min-width: 461px) {
+    .loginFormContainer {
+      margin: 10px auto;
+      width: 316px;
+      padding: 32px;
+      padding-top: 68px;
+    }
+
+    gap: 80px;
+  }
+}
