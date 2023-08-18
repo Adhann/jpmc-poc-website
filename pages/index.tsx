@@ -19,6 +19,7 @@ export default function App() {
 
     const inputPassword = window.prompt("Masukkan password:");
     if (inputPassword === password) {
+      // @ts-ignore
       localStorage.setItem("is_authenticated", true);
     } else {
       window.location.reload();
